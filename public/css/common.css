@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+body {
+  background-color: #ffffff;
+  font-family: Verdana;
+  margin: 0;
+}
+
+.header {
+  border: 1px #ffffff solid;
+  background-color: #435a8e;
+  height: 46px;
+  width: inherit;
+  text-align: right;
+}
+
+.footer {
+  border: 1px #ffffff solid;
+  background-color: #435a8e;
+  height: 46px;
+  width: inherit;
+  text-align: right;
+}
+
+.grey-block {
+  padding: 5px;
+  margin: 2px auto;
+  border: 1px #ddd solid;
+  background-color: #f0f0f0;
+  clear: both;
+}
+
+.white-block {
+  padding: 5px;
+  margin: 2px auto;
+  border: 1px #ddd solid;
+  background-color: #ffffff;
+  clear: both;
+}
+
+.header-btn {
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+.green-btn {
+  -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+  box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+  background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+  background-color:#9dce2c;
+  -webkit-border-top-left-radius:0px;
+  -moz-border-radius-topleft:0px;
+  border-top-left-radius:0px;
+  -webkit-border-top-right-radius:0px;
+  -moz-border-radius-topright:0px;
+  border-top-right-radius:0px;
+  -webkit-border-bottom-right-radius:0px;
+  -moz-border-radius-bottomright:0px;
+  border-bottom-right-radius:0px;
+  -webkit-border-bottom-left-radius:0px;
+  -moz-border-radius-bottomleft:0px;
+  border-bottom-left-radius:0px;
+  text-indent:0px;
+  border:2px solid #83c41a;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Verdana;
+  font-size:13px;
+  font-weight:bold;
+  font-style:normal;
+  height:26px;
+  line-height:26px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 2px 1px #689324;
+}
+.green-btn:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+  background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+  background-color:#8cb82b;
+}
+
+.green-btn:active {
+  position:relative;
+  top:1px;
+}
