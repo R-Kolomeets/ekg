@@ -1,0 +1,32 @@
+@section('title')
+[% $title %]
+@endsection
+
+@section('content')
+  <div class="white-block centered signup">
+    <a href="[% URL::to('fblogin') %]" class="fb-btn centered">[% Lang::get('locale.facebook_signup') %]</a>
+    <hr>
+    <p>
+      [% Lang::get('locale.signup_manually') %]
+    </p>
+    [[% Form::open(array('action' => 'UserController@signupProcess')) %]]
+    <div class="centered">
+      <input type="email" name="email" class="signup-input" placeholder="[% Lang::get('locale.enter_your_email') %]">
+    </div>
+    <div class="centered">
+      <input type="password" name="password" class="signup-input" placeholder="[% Lang::get('locale.password') %]">
+    </div>
+    <div class="centered">
+      <input type="password" name="password_confirmation" class="signup-input" placeholder="[% Lang::get('locale.confirm_password') %]">
+    </div>
+    <div class="centered">
+      <input type="submit" value="[% Lang::get('locale.signup') %]" class="green-btn signup-btn">
+    </div>
+    [[% Form::close() %]]
+    <p class="notification">
+      [% Lang::get('locale.already_have_account') %] <a href="[% URL::to('login') %]">[% Lang::get('locale.login') %]</a>
+    </p>
+  </div>
+@endsection
+
+@include('common.skeleton')

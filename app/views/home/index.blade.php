@@ -1,5 +1,5 @@
 @section('title')
-EKG
+[% $title %]
 @endsection
 
 @include('common.skeleton')

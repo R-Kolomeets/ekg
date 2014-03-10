@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'UserController@home');
+Route::get('signup', 'UserController@signup');
+Route::post('signup/process', array('before' => 'csrf', 'uses' => 'UserController@signupProcess'));
